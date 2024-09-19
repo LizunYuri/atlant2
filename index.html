@@ -12,22 +12,30 @@
     <header class="header" id="header">
         <div class="container header-container">
             <div class="header-list logotype" id="contact">
-                
-                    <div class="logotype-address">
-                        <p class="header-list-item">г.Новосибирск, ул.Киевская 15а, Школа N45</p>
-                        <a class="header-list-item" href="tel:+79537766676">+7(953)776-66-76</a>
-                    </div>
-                
+                <div class="logotype-address">
+                    <a  class="logo-main cycle-objects-img"href="#">
+                        <img src="./img/logotype2.png" alt="logo">
+                    </a>
+                </div>
             </div>            
             <nav>
                 <ul class="header-list">
                     <li class="header-list-item header-effect block item-animation-objects" ><a href="#about">О нас</a></li>
                     <li class="header-list-item header-effect block item-animation-objects"><a href="#reviews">Отзывы</a></li>
-                    <li class="header-list-item header-effect block item-animation-objects"><a href="#trainer">Тренеры</a></li>
                     <li class="header-list-item header-effect block item-animation-objects"><a href="#schedule">Расписание</a></li>
                     <li class="header-list-item header-effect block item-animation-objects"><a href="#blog">Новости</a></li>
                 </ul>
             </nav>
+            <div class="logotype-address">
+                <button class="custom-btn-training" onclick="openModalWindow()">
+                    <p>Записаться<br> на тренировку</p>
+                </button>
+                <div class="logotype-address-block">
+                    <a class="header-list-item" href="tel:+79537766676">+7(953)776-66-76</a>
+                    <a class="header-list-item" href="mailto:info@example.ru">info@example.ru</a>
+                </div>
+            </div>
+            
         </div>
         <!-- <div class="container mobil-visible">
                 <div onclick="burgerClick()"  class="burger">
@@ -67,40 +75,38 @@
             <div class="main-screen-bg">
                 <div class="container main-screen-container">
                     <div class="row  main-screen-content">
-                        <div class="col-xl-6 col-lg-12 main-screen-right">
-                                <div class="main-screen-right-card cycle-objects-card">
-                                    <div class="left"></div>
-                                    <div class="right">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, iste.</p>
-                                    </div>
-                                </div>
-                                <div class="main-screen-right-card cycle-objects-card">
-                                    <div class="left"></div>
-                                    <div class="right">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, iste.</p>
-                                    </div>
-                                </div>
-                                <div class="main-screen-right-card cycle-objects-card">
-                                    <div class="left"></div>
-                                    <div class="right">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, iste.</p>
-                                    </div>
-                                </div>
-                        </div>
                         <div class="col-xl-6 col-lg-12 main-screen-left">
-                            <div class="logo-main cycle-objects-img">
-                                <img src="./img/logotype2.png" alt="logo">
-                            </div>
-                            <h1 class="cycle-objects-subtitle">Футбольный клуб</h1>
+                            <h1 class="cycle-objects-subtitle">Школа Футбола</h1>
                             <h2 class="cycle-objects-title">Атлант</h2>
+                            <div class="main-screen-right-card cycle-objects-card">
+                                <!-- <div class="left"></div> -->
+                                <div class="right">
+                                    <h3>Lorem, ipsum.</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, iste.</p>
+                                </div>
+                            </div>
+
                             <div class="custom-modal-btn">
                                 <button onclick="openModalWindow()">
-                                    <p><span>GO! </span>на тренировку</p>
+                                    <p>Записаться на тренировку</p>
                                 </button>
                             </div>
+                            
+                            <div class="footer-icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-vk"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 main-screen-right">
+                            <img src="./img/ff30.png" alt="ball">
                         </div>
                     </div>
                 </div>
@@ -256,114 +262,47 @@
                 <button class="custom-btn">Оставить отзыв</button>
             </div>
         </section>
-        <section class="trainer" id="trainer">
-
-            <div class="container trainer-container">
-                <h2 class="page-subtitle cycle-objects-title">Тренерский состав</h2>
-                <h3 class="page-title cycle-objects-title">Они воситывают чемпионов</h3>
-                
-                <div class="trainer-content">
-
-                    <div class="trainer-content-card item-animation-objects-express">
-                        <div class="trainer-content-card-img">
-                            <img src="./img/t01.jpg" alt="">
-                        </div>
-                        <div class="trainer-content-card-text">
-                            <div  class="trainer-content-card-description">
-                                <h5>name name</h5>
-                                <h6>Lorem ipsum dolor sit.</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis nisi deleniti quo aliquid dicta animi nemo id eius harum odit sed, necessitatibus sit ipsa quod quos error ullam nulla?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trainer-content-card item-animation-objects-express">
-                        <div class="trainer-content-card-img">
-                            <img src="./img/t02.jpg" alt="">
-                        </div>
-                        <div class="trainer-content-card-text">
-                            <div  class="trainer-content-card-description">
-                                <h5>name name</h5>
-                                <h6>Lorem ipsum dolor sit.</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis nisi deleniti quo aliquid dicta animi nemo id eius harum odit sed, necessitatibus sit ipsa quod quos error ullam nulla?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trainer-content-card item-animation-objects-express">
-                        <div class="trainer-content-card-img">
-                            <img src="./img/t03.jpg" alt="">
-                        </div>
-                        <div class="trainer-content-card-text">
-                            <div  class="trainer-content-card-description">
-                                <h5>name name</h5>
-                                <h6>Lorem ipsum dolor sit.</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis nisi deleniti quo aliquid dicta animi nemo id eius harum odit sed, necessitatibus sit ipsa quod quos error ullam nulla?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="schedule" id="schedule">
             <div class="container schedule-container">
                 <h2 class="page-subtitle cycle-objects-title">Расписание</h2>
                 <h3 class="page-title cycle-objects-title">Встретимся на поле</h3>
                 <div class="schedule-content">
-                    <div class="table">
-                        <div class="day first">
-                            <p>День недели</p>
-                        </div>
-                        <div class="age first">
-                            <p>Возрастная группа</p>
-                        </div>
-                        <div class="day first">
-                            <p>время</p>
-                        </div>
-                    </div>
-                    
-                    <div class="table">
-                        <div class="day">
-                            <p>Среда</p>
-                        </div>
-                        <div class="age">
-                            <p>6,7,8 лет</p>
-                        </div>
-                        <div class="day">
-                            <p>с 19:40 до 20:40</p>
-                        </div>
-                    </div>
-                    <div class="table">
-                        <div class="day">
-                            <p>Среда</p>
-                        </div>
-                        <div class="age">
-                            <p>9,10, 11 лет</p>
-                        </div>
-                        <div class="day">
-                            <p>с 20:40 до 21:40</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="day">
-                        <p>Суббота</p>
-                    </div>
-                    <div class="age">
-                        <p>6,7,8 лет</p>
-                    </div>
-                    <div class="day">
-                        <p>с 15:30 до 16:30</p>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="day">
-                        <p>Суббота</p>
-                    </div>
-                    <div class="age">
-                        <p>9,10, 11 лет</p>
-                    </div>
-                    <div class="day">
-                        <p>с 16:30 до 17:30</p>
-                    </div>
+                    <table class="tables">
+                        <thead>
+                            <tr class="tables-thead">
+                                <th class="tables-th">Понедельник</th>
+                                <th class="tables-th">Вторник</th>
+                                <th class="tables-th">Среда</th>
+                                <th class="tables-th">Четверг</th>
+                                <th class="tables-th">Пятница</th>
+                                <th class="tables-th">Суббота</th>
+                                <th class="tables-th">Воскресенье</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tables-tbody">
+                                <td class="tables-th-body"></td>
+                                <td class="tables-th-body"></td>
+                                <td class="tables-th-body">
+                                    <p><span>6-8лет</span></p>
+                                    <p>с 19:40 до 20:40</p>
+                                    
+                                    <p><span>9-11лет</span></p>
+                                    <p>с 20:40 до 21:40</p>
+                                </td>
+                                <td class="tables-th-body"></td>
+                                <td class="tables-th-body"></td>
+                                <td class="tables-th-body">
+                                    <p><span>6-8лет</span></p>
+                                    <p>с 15:30 до 16:30</p>
+                                    
+                                    <p><span>9-11лет</span></p>
+                                    <p>с 16:30 до 17:30</p>
+                                </td>
+                                <td class="tables-th-body"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             </div>
@@ -399,7 +338,6 @@
          </section>
         
         <div class="" style="display: none;">
-        
         
         
          <div class="custom-modal modal-none" id="custom-modal">
@@ -534,30 +472,31 @@
                         <ul>
                             <li class="header-effect block"><a href="#about">О нас</a></li>
                             <li class="header-effect block"><a href="#reviews">Отзывы</a></li>
-                            <li class="header-effect block"><a href="#trainer">Тренеры</a></li>
                             <li class="header-effect block"><a href="#schedule">Расписание</a></li>
                             <li class="header-effect block"><a href="#blog">Новости</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-body-explorer">
-                    <p>Информация:</p>
-                        <ul>
                             <li class="header-effect block"><a href="#">404</a></li>
                             <li class="header-effect block"><a href="#">Политика конфиденциальности</a></li>
                             <li class="header-effect block"><a href="#">Лицензионное соглашение</a></li>
                         </ul>
+                    </nav>
                 </div>
-                <div class="footer-address">
-                   <h6>Контакты:</h6>
+                <div class="footer-contact">
+                    <div class="footer-address">
+                        <h6>Контакты:</h6>
                         <p class="header-list-item">г.Новосибирск, ул.Киевская 15а, Школа N45</p>
                         <a class="header-list-item" href="tel:+7(953)776-66-76">+7(953)776-66-76</a>
-                    <div class="footer-working">
-    
-                    <button class="scroll-to-top" id="scrollToTopBtn" onclick="scrollToTop()">
-                        <i class="fas fa-chevron-up"></i>
-                    </button>
+                        <div class="footer-working">
+                            <button class="scroll-to-top" id="scrollToTopBtn" onclick="scrollToTop()">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="footer-maps">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A59e646de3144c8ebc4c459b71f56caa9f166fc2850f7ed4b6ddc0dbf863763b3&amp;width=320&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
                 </div>
+                
             </div>
         </div>
         <div class="copyright">
