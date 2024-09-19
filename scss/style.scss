@@ -27,6 +27,7 @@
     --color-gold: rgba(220, 220, 220, 1);
     --color-black: rgb(19, 23, 24);
     --color-yelow: rgb(246, 206, 65);
+    --color-orange: rgb(211, 84, 0);
     --color-red: rgb(255, 0, 0);
     --font-text: 'Arial nova';
     --font-title: 'Ubuntu';
@@ -127,8 +128,9 @@ p, a, li{
     align-items: center;
     color: var(--color-white);
     border: 2px solid var(--color-white);
-    box-shadow: 0px 21px 66px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 21px 66px 0px rgba(0, 0, 0, 0.6);
     transition: all 1s ease;
+    border-radius: 20px;
     p{
         padding: 12px 32px;
         font-family: serif;
@@ -449,6 +451,7 @@ p, a, li{
         width: 350px;
         height: 80px;
         background: var(--color-red);
+        border-radius: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -589,7 +592,7 @@ p, a, li{
     width: 100%;
     padding-top: 76px;
     padding-bottom: 76px;
-    background: var(--color-gold);
+    background: var(--color-white);
     box-shadow: 0px 37px 60px 0px rgba(0, 0, 0, 0.02);    
     &-container{
         display: flex;
@@ -717,7 +720,7 @@ p, a, li{
     width: 100%;
     padding-top: 76px;
     padding-bottom: 76px;
-    background-color: var(--color-gold);
+    background-color: var(--color-white);
     &-container{
         width: 100%;
         display: flex;
@@ -794,25 +797,27 @@ p, a, li{
 }
 .blog{
     width: 100%;
-    background: rgba(235, 243, 245, 1);
+    padding-top: 76px;
+    padding-bottom: 76px;
+    background: linear-gradient(135deg, rgba(0, 51, 102, .2) 0%, rgba(0, 122, 245, .7) 15%, rgba(255, 161, 99, .65) 30%, rgba(211, 84, 0, .6) 50%, rgba(255, 161, 99, .65) 65%, rgba(0, 122, 245, .7) 75%, rgba(0, 51, 102, .2) 100%);
     box-shadow: 0px 37px 60px 0px rgba(0, 0, 0, 0.02); 
-    &-bg{
-        width: 100%;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        display: flex;
-        &::after{
-            content: '';
-            clip-path: polygon(80.81% 100%,21.01% 0.00%,0.00% 0.00%,0% 100%);
-             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--color-grey);
-        }
-    }
+    // &-bg{
+    //     width: 100%;
+    //     width: 100%;
+    //     height: auto;
+    //     overflow: hidden;
+    //     display: flex;
+    //     &::after{
+    //         content: '';
+    //         clip-path: polygon(80.81% 100%,21.01% 0.00%,0.00% 0.00%,0% 100%);
+    //          position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         background: var(--color-grey);
+    //     }
+    // }
     &-container{
         display: flex;
         flex-direction: column;
@@ -896,17 +901,114 @@ p, a, li{
     
 }
 
+.trainer{
+    display: flex;
+    align-items: center;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 36px;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 76px;
+        &-card{
+            margin-top: 36px;
+            margin-bottom: 36px;
+            width: 100%;
+            height: 430px;
+            background-color: var(--color-orange);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            &-img{
+                width: 540px;
+                height: 500px;
+                border: 10px solid var(--color-white);
+                border-radius: 25px;
+                box-shadow: 0px 21px 66px 0px rgba(0, 0, 0, 0.6);
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+                & > .logotype{
+                    width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    bottom: -50px;
+                    right: -75px;
+                    filter: contrast(150%);
+                }
+            }
+            &-text{
+                width: 50%;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex-direction: column;
+                text-align: center;
+                color: var(--color-white);
+
+                 & > h5{
+                    font-family:  var(--font-tilte);
+                    font-size: 32px;
+                    font-weight: 500;
+                    line-height: 36px;
+                    text-align: center;
+                    margin-bottom: 23px;
+                    padding-top: 32px;
+                    
+                }
+                & > .ball{
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 36px;
+                    margin-top: 36px;
+                }
+                & > h6{
+                    font-family: var(--font-text);
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 23.17px;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    color: var(--color-yelow);
+                    padding-bottom: 36px;
+                }
+                & > a{
+                    font-family: var(--font-tilte);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+}
 
 .footer{
     padding-top: 76px;
-    background: var(--color-grey);
+    background: var(--color-black);
     &-logo{
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         padding-bottom: 76px;
-        border-bottom: 1px solid var(--color-yelow);
+        border-bottom: 1px solid var(--color-white);
         &-link{
             display: flex;
             align-items: center;
@@ -923,7 +1025,7 @@ p, a, li{
                 line-height: 50px;
                 letter-spacing: 0.02em;
                 text-align: left;
-                color: var(--color-yelow);
+                color: var(--color-white);
                 font-family: var(--font-title);
             }
         }
@@ -935,12 +1037,12 @@ p, a, li{
        &> a{
             width: 55px;
             height: 55px;
-            border: 2px solid var(--color-yelow);
+            border: 2px solid var(--color-white);
             padding: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--color-yelow);
+            color: var(--color-white);
             font-size: 22px;
             font-family: var(--font-title);
         }
@@ -962,10 +1064,10 @@ p, a, li{
             p{
                 font-family: var(--font-title);
                 
-                color: var(--color-yelow);
+                color: var(--color-white);
             }
             a{
-                color: var(--color-yelow);
+                color: var(--color-white);
                 font-size: 17px;
                 font-weight: 500;
                 line-height: 34px;
@@ -987,7 +1089,7 @@ p, a, li{
         width: 325px;
         
         h6, p, span, a{
-            color: var(--color-yelow);
+            color: var(--color-white);
             padding-bottom: 22px;
         }
         h6{
@@ -997,7 +1099,7 @@ p, a, li{
                 line-height: 50px;
                 letter-spacing: 0.02em;
                 text-align: left;
-                color: var(--color-yelow);
+                color: var(--color-white);
                 font-family: var(--font-title);
            
         }
@@ -1023,7 +1125,7 @@ p, a, li{
     &-working{
         width: 176px;
         h6, p, span, a{
-            color: var(--color-yelow);
+            color: var(--color-white);
             padding-bottom: 22px;
         }
         h6{
@@ -1052,7 +1154,7 @@ p, a, li{
     }
 }
 .copyright{
-    background: var(--color-grey);
+    background: transparent;
     height: 75px;
     width: 100%;
     display: flex;
@@ -1064,18 +1166,18 @@ p, a, li{
     line-height: 36px;
     letter-spacing: -0.01em;
     text-align: center;
-    color: var(--color-yelow);
+    color: var(--color-white);
 }
 
 .scroll-to-top{
     width: 55px;
     height: 55px;
-    border: 2px solid var(--color-yelow);
+    border: 2px solid var(--color-white);
     padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-yelow);
+    color: var(--color-white);
     font-size: 23px;
 }
 
