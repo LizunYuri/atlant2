@@ -604,7 +604,7 @@ p, a, li {
   padding-top: 76px;
   padding-bottom: 76px;
   width: 100%;
-  background: var(--color-grey);
+  background: linear-gradient(45deg, rgba(0, 51, 102, 0.1) 0%, rgba(0, 122, 245, 0.7) 15%, rgba(255, 161, 99, 0.65) 30%, rgba(211, 84, 0, 0.6) 50%, rgba(255, 161, 99, 0.65) 65%, rgba(0, 122, 245, 0.7) 75%, rgb(0, 51, 102) 100%);
   height: auto;
 }
 .about-container {
@@ -627,7 +627,7 @@ p, a, li {
           flex-direction: column;
   background: var(--color-green);
   display: flex;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 .about-content-card {
   margin-top: 37px;
@@ -641,7 +641,7 @@ p, a, li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: var(--color-white);
+  color: var(--color-black);
   width: 80%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

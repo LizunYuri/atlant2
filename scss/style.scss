@@ -507,7 +507,7 @@ p, a, li{
     padding-top: 76px;
     padding-bottom: 76px;
     width: 100%;
-    background:  var(--color-grey);
+    background: linear-gradient(45deg, rgba(0, 51, 102, .1) 0%, rgba(0, 122, 245, .7) 15%, rgba(255, 161, 99, .65) 30%, rgba(211, 84, 0, .6) 50%, rgba(255, 161, 99, .65) 65%, rgba(0, 122, 245, .7) 75%, rgba(0, 51, 102, 1) 100%);
     height: auto;
     &-container{
         width: 100%;
@@ -522,14 +522,14 @@ p, a, li{
         flex-direction: column;
         background: var(--color-green);
         display: flex;
-        color: var(--color-white);
+        color: var(--color-black);
         
         &-card{
             margin-top: 37px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            color: var(--color-white);
+            color: var(--color-black);
             width: 80%;
             transition: all 0.5s ease;
             padding-bottom: 32px;
