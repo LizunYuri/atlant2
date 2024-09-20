@@ -83,7 +83,7 @@ p, a, li{
     padding-bottom: 23px;
     background: var(--color-grey);
     z-index: 999;
-    min-height: 180px;
+    min-height: 85px;
     &-container{
         display: flex;
         align-items: center;
@@ -1576,6 +1576,7 @@ p, a, li{
 
 @media (max-width: 1200px) {
     .header{
+        min-height: 190px;
         &-list{
             flex-wrap: wrap;
             justify-content: center;
@@ -1614,6 +1615,9 @@ p, a, li{
 }
 
 @media (max-width:768px) {
+    .header{
+        min-height: 80px;
+    }
     .header-container{
         display: none;
     }
