@@ -447,7 +447,14 @@ p, a, li{
         }
     }
 }
+ $pasing: 60px;
 
+
+    @for $i from 1 through 3 {
+        .card-child:nth-child(#{$i}){
+            transform: translateX((#{$i * $pasing}));
+        }
+    }
 
 
 .logo-main{
@@ -519,7 +526,7 @@ p, a, li{
     padding-top: 76px;
     padding-bottom: 76px;
     width: 100%;
-    background: var(--color-gold);
+    background: linear-gradient(45deg, rgba(0, 51, 102, .1) 0%, rgba(0, 122, 245, .7) 15%, rgba(255, 161, 99, .65) 30%, rgba(211, 84, 0, .6) 50%, rgba(255, 161, 99, .65) 65%, rgba(0, 122, 245, .7) 75%, rgba(0, 51, 102, 1) 100%);;
     height: auto;
     &-container{
         width: 100%;
@@ -584,6 +591,8 @@ p, a, li{
         
     }
 }
+
+
 
 .about-content-img.first {
     display: block;

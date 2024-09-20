@@ -535,6 +535,24 @@ p, a, li {
   text-align: left;
 }
 
+.card-child:nth-child(1) {
+  -webkit-transform: translateX(60px);
+      -ms-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.card-child:nth-child(2) {
+  -webkit-transform: translateX(120px);
+      -ms-transform: translateX(120px);
+          transform: translateX(120px);
+}
+
+.card-child:nth-child(3) {
+  -webkit-transform: translateX(180px);
+      -ms-transform: translateX(180px);
+          transform: translateX(180px);
+}
+
 .logo-main {
   width: 350px;
   height: 350px;
@@ -617,7 +635,7 @@ p, a, li {
   padding-top: 76px;
   padding-bottom: 76px;
   width: 100%;
-  background: var(--color-gold);
+  background: linear-gradient(45deg, rgba(0, 51, 102, 0.1) 0%, rgba(0, 122, 245, 0.7) 15%, rgba(255, 161, 99, 0.65) 30%, rgba(211, 84, 0, 0.6) 50%, rgba(255, 161, 99, 0.65) 65%, rgba(0, 122, 245, 0.7) 75%, rgb(0, 51, 102) 100%);
   height: auto;
 }
 .about-container {
