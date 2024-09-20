@@ -6,6 +6,7 @@ const backgroundSlides = document.querySelectorAll('.first-screen-slide')
 const itemAnimation = document.querySelectorAll('.item-animation-objects')
 const itemAnimationExpress = document.querySelectorAll('.item-animation-objects-express')
 const elementReverse = document.querySelectorAll('.trainer-content-card')
+const ballEffect = document.querySelectorAll('.review-card-img')
 
 const cycleEffectCard = (content, timing, effect, delay, percent) => {
     content.forEach((e, index) => {
@@ -123,6 +124,13 @@ const handleScrollEffect = () => {
         'fade-element',
         0.2
     )
+    cycleEffectCard(
+        ballEffect,
+        700,
+        'review-card-img-active',
+        300,
+        0.1
+        );
 }
 
 window.addEventListener('DOMContentLoaded', () => {
