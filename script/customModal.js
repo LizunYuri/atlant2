@@ -2,10 +2,28 @@ const modal = document.getElementById('custom-modal');
 const closeButton = document.querySelector('.closed');
 const openModal = document.querySelectorAll('.open-modal');
 
+const modalReview = document.getElementById('custom-modal-review');
+const closeButtonReview = document.querySelector('.closed-review');
 
 const openModalWindow = () => {
     modal.style.display = 'flex';
 }
+
+const openModalWindowReview = () => {
+    modalReview.style.display = 'flex';
+}
+
+closeButtonReview.addEventListener('click', () => {
+    modalReview.style.display = 'none';
+});
+
+
+window.addEventListener('click', (event) => {
+    if (event.target === modalReview) {
+        modalReview.style.display = 'none';
+    }
+});
+
 
 closeButton.addEventListener('click', () => {
     modal.style.display = 'none';
@@ -17,6 +35,8 @@ window.addEventListener('click', (event) => {
         modal.style.display = 'none';
     }
 });
+
+
 
 
 const userPhoneInput = document.getElementById('userPhone');
