@@ -834,32 +834,37 @@ p, a, li{
 }
 .blog{
     width: 100%;
-    padding-top: 76px;
-    padding-bottom: 76px;
-    background: var(--color-cold);
+
+    background-image: url(../img/4.jpg);
     box-shadow: 0px 37px 60px 0px rgba(0, 0, 0, 0.02); 
-    // &-bg{
-    //     width: 100%;
-    //     width: 100%;
-    //     height: auto;
-    //     overflow: hidden;
-    //     display: flex;
-    //     &::after{
-    //         content: '';
-    //         clip-path: polygon(80.81% 100%,21.01% 0.00%,0.00% 0.00%,0% 100%);
-    //          position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //         background: var(--color-grey);
-    //     }
-    // }
+    &-bg{
+        width: 100%;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        background-color: rgba(211, 84, 0, .2);
+        &::after{
+            content: '';
+            clip-path: polygon(80.81% 100%,21.01% 0.00%,0.00% 0.00%,0% 100%);
+             position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color-grey);
+        }
+    }
     &-container{
+        padding-top: 76px;
+        padding-bottom: 76px;
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 5;
+        h2, h3{
+            color: var(--color-white);
+        }
     }
     &-content{
         width: 100%;
